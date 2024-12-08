@@ -3,8 +3,20 @@
   "name": "swarm_object",
   "rules": {
     "source_file": {
-      "type": "SYMBOL",
-      "name": "pair"
+      "type": "REPEAT",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "key_val"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "type"
+          }
+        ]
+      }
     },
     "val": {
       "type": "CHOICE",
@@ -43,8 +55,20 @@
           "value": "{"
         },
         {
-          "type": "SYMBOL",
-          "name": "pair"
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "key_val"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "type"
+              }
+            ]
+          }
         },
         {
           "type": "STRING",
@@ -99,19 +123,6 @@
               }
             ]
           }
-        }
-      ]
-    },
-    "pair": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "key_val"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "type"
         }
       ]
     },

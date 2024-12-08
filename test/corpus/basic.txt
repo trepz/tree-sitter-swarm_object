@@ -1,0 +1,41 @@
+==============
+Simple key val
+==============
+
+hey  =  5
+
+---
+
+(source_file (key_val (key_string) (val (number))))
+
+==============
+Num and string
+==============
+
+hey  =  5
+bro  =  "ok"
+
+---
+
+(source_file 
+  (key_val (key_string) (val (number)))
+  (key_val (key_string) (val (string))))
+
+=============
+Key val pairs
+=============
+
+hello_there  =  5
+"string KEY"  =  "string val"
+__type  =  "basic"
+
+---
+
+(source_file
+ (key_val
+  (key_string)
+  (val (number)))
+ (key_val
+  (string)
+  (val (string)))
+ (type (string)))
