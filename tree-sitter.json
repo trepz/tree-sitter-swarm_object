@@ -1,0 +1,33 @@
+{
+  "grammars": [
+    {
+      "name": "swarm_object",
+      "camelcase": "SwarmObject",
+      "scope": "source.swarm_object",
+      "path": ".",
+      "file-types": null,
+      "injection-regex": "^swarm_object$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Swarm engine json-like object syntax",
+    "authors": [
+      {
+        "name": "trepz"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/trepz/tree-sitter-swarm_object"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
