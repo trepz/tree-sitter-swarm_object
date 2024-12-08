@@ -40,7 +40,7 @@ module.exports = grammar({
 
     type: $ => seq('__type', '=', choice($.string, $.null)),
 
-    key_string: $ => repeat(/[a-zA-Z][a-zA-Z0-9_]/),
+    key_string: $ => seq(/[a-zA-Z]/, repeat(/[a-zA-Z0-9_]/)),
 
     string: $ => seq(
       '"', 
