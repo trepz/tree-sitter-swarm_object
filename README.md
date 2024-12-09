@@ -29,3 +29,5 @@ And then copy the `.scm` files in `queries/` to your nvim query config path unde
 `~/.config/nvim/queries/swarm_object/highlights.scm`
 
 Then run `:TSUpdate` and you shold be good to go.
+
+![highlight-example](https://github.com/user-attachments/assets/b9fb5815-0cc7-4db9-9603-e720ea45fd0f)
